@@ -17,4 +17,4 @@ WORKDIR /app/mysql
 VOLUME ["/var/lib/mysql", "/app/mysql/log"]
 EXPOSE 3306
 
-CMD ["mysqld", "--user=root", "--skip-grant-tables"]
+CMD ["mysqld", "--user=root"]
