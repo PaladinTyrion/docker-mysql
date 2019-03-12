@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.9
 MAINTAINER paladintyrion <paladintyrion@gmail>
 
 ENV MYSQL_LOG /app/mysql/log
@@ -17,4 +17,4 @@ WORKDIR /app/mysql
 VOLUME ["/var/lib/mysql", "/app/mysql/log"]
 EXPOSE 3306
 
-CMD ["mysqld", "--user=root", "--skip-grant-tables"]
+CMD ["mysqld", "--user=root"]
